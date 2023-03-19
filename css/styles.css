@@ -59,6 +59,11 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -89,10 +94,10 @@ nav {
 }
 
 .menu-link {
-    text-decoration: none;
     color: var(--brand-color-black);
 }
-.menu-link:is(:hover, :focus, :active) {
+
+.menu-link:is(:hover, :focus) {
     color: var(--brand-color-blue);
 }
 
@@ -103,20 +108,21 @@ nav {
     line-height: 1.1;
     font-weight: 500;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.contact-list a {
+.contact-link {
     color: var(--brand-color-grey);
-    text-decoration: none;
-    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
 }
 
-.contact-list a:last-child{
-    margin-right: 0;
-}
-
-.contact-list a:is(:hover, :focus, :active) {
+.contact-link:is(:hover, :focus) {
     color: var(--brand-color-blue);
+    fill: var(--brand-color-blue);
 }
 
 /* SECTION LOGO */
@@ -127,7 +133,6 @@ nav {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-decoration: none;
     color: #000;
     margin-right: 93px;
 }

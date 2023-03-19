@@ -11,7 +11,9 @@
     /* primary background */
     --brand-background-light: #E5E5E5;
     --brand-background-dark: #2F303A;
+    --brand-background-light-box : #F5F4FA;
     --brand-background-white: var(--brand-color-white);
+    --brand-radius: 4px;
 }
 
 * {
@@ -246,6 +248,13 @@ nav {
 
 .advantage-item {
 
+}
+
+.advantage-icon {
+    padding: 25px 100px;
+    background-color: var(--brand-background-light-box);
+    margin-bottom: 30px;
+    border-radius: var(--brand-radius);
 }
 
 .advantage-title {

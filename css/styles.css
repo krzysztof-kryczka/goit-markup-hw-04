@@ -417,6 +417,46 @@ display: flex;
     fill: var(--brand-color-white);
 } 
 
+/* SECTION CLIENTS */
+
+.clients { 
+    text-align: center;
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--brand-color-black);
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.client-link {
+    display: block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: var(--brand-radius);
+}
+
+.client-link:is(:hover, :focus) {
+    border-color: var(--brand-color-blue);
+}
+
+.client-link:hover .client-icon {
+    fill: var(--brand-color-blue);
+}
+
+.client-icon {
+    fill: #afb1b8;
+    margin: 16px 32px;
+}
+
 /* *************** portfolio.html *************** */
 
 /* SECTION FILTERS */

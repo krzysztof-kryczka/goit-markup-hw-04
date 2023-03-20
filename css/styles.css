@@ -72,7 +72,7 @@ header {
 }
 
 /* NAVIGATION in header */
-.header{
+.header {
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
@@ -121,6 +121,7 @@ nav {
     display: flex;
     align-items: center;
     column-gap: 10px;
+    fill: var(--brand-color-grey)
 }
 
 .contact-link:is(:hover, :focus) {
@@ -451,7 +452,9 @@ display: flex;
     border-color: var(--brand-color-blue);
 }
 
-.client-link:hover .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon 
+{
     fill: var(--brand-color-blue);
 }
 

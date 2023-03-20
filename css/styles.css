@@ -8,6 +8,7 @@
     --brand-color-grey: #757575;
     --brand-color-white: #fff;
     --brand-color-blue: #2196f3;
+    --brand-color-lightgrey: #AFB1B8;
     /* primary background */
     --brand-background-light: #E5E5E5;
     --brand-background-dark: #2F303A;
@@ -332,6 +333,36 @@ nav {
     letter-spacing: 0.03em;
     padding-top: 10px;
 }
+
+.team-description-links {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-social-icon {
+    fill: var(--brand-color-lightgrey);
+}
+
+.team-social-link { 
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-social-link:is(:hover, :focus) {
+    background-color: var(--brand-color-blue);
+    border-radius: 50%;
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+    fill: var(--brand-color-white);
+} 
 
 /* *************** portfolio.html *************** */
 
